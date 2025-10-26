@@ -51,7 +51,7 @@ $(OBJDIR)%.o : %.c
 	$(CC) -c $(CFLAGS) $< -o $@
 	
 # Compile all Fortran files
-$(OBJDIR)%.o : %.f
+$(OBJDIR)%.o : Lbfgsb.3.0/%.f
 	$(FC) -c $(FFLAGS) $< -o $@
 
 clean :
